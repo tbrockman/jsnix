@@ -1,0 +1,18 @@
+{
+    "extends": "@sindresorhus/tsconfig",
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "outDir": "dist",
+        "sourceMap": false,
+        "jsx": "react",
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "."
+    ]
+}

@@ -1,0 +1,1 @@
+declare module '@jsnix/xterm/css/xterm.css';

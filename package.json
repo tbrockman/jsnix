@@ -1,0 +1,44 @@
+{
+  "name": "@jsnix/jsnix",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo clean && rm -rf .turbo node_modules",
+    "build:utils": "npm run build --workspace=@jsnix/utils",
+    "build:cli": "npm run build --workspace=@jsnix/cli",
+    "build:scripts": "npm run build --workspace=@jsnix/scripts",
+    "build:relay": "npm run build --workspace=@jsnix/relay",
+    "build:react": "npm run build --workspace=@jsnix/react",
+    "dev": "turbo dev",
+    "changeset": "changeset",
+    "secret": "cd packages/scripts && npm run build && cd ../utils && npm run build && cd ../cli && npm run build",
+    "version": "changeset version",
+    "publish": "npm run build && changeset publish"
+  },
+  "workspaces": [
+    "packages/cli",
+    "packages/react",
+    "packages/scripts",
+    "packages/utils",
+    "packages/relay",
+    "packages/testing"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11",
+    "@eslint/compat": "^1.2.4",
+    "@eslint/js": "^9.17.0",
+    "@stylistic/eslint-plugin": "^2.12.1",
+    "@types/react-dom": "^19.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.3",
+    "globals": "^15.14.0",
+    "turbo": "^1.13.4",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0"
+  },
+  "packageManager": "npm@10.2.3"
+}

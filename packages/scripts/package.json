@@ -1,0 +1,27 @@
+{
+  "name": "@jsnix/scripts",
+  "version": "1.0.19",
+  "type": "module",
+  "description": "miscellaneous script code",
+  "scripts": {
+    "dev": "tsc",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .turbo dist node_modules",
+    "lint": "eslint --fix -c ../../eslint.config.js ."
+  },
+  "exports": {
+    "./scrape": {
+      "import": "./dist/scrape.js",
+      "require": "./dist/scrape.js"
+    }
+  },
+  "author": "theodore brockman",
+  "license": "MIT",
+  "dependencies": {
+    "@webcontainer/api": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "extends": "@sindresorhus/tsconfig",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "noPropertyAccessFromIndexSignature": false,
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "outDir": "dist",
+        "sourceMap": false,
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "@jsnix/*": [
+                "packages/*"
+            ]
+        },
+        "lib": [
+            "DOM.AsyncIterable",
+            "DOM",
+            "DOM.Iterable",
+            "WebWorker",
+            "ESNext"
+        ]
+    },
+    "include": [
+        "packages/**/*"
+    ]
+}

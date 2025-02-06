@@ -1,0 +1,120 @@
+{
+  "name": "@jsnix/utils",
+  "version": "0.0.59",
+  "description": "jsnix shared utils",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -p tsconfig.esm.json",
+    "check-types": "tsc --noEmit -p tsconfig.esm.json && tsc --noEmit -p tsconfig.cjs.json",
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
+    "test": "test:unit && test:e2e",
+    "test:unit": "mocha **/*.test.ts",
+    "test:e2e": "playwright test",
+    "clean": "rm -rf .turbo dist node_modules",
+    "lint": "eslint --fix -c ../../eslint.config.js .",
+    "vite": "vite",
+    "playwright": "playwright test"
+  },
+  "author": "theodore brockman",
+  "license": "MIT",
+  "dependencies": {
+    "@jsnix/addon-fit": "^0.10.1",
+    "@jsnix/xterm": "^5.5.13",
+    "@webcontainer/api": "^1.5.1",
+    "big-json": "^3.2.0",
+    "chalk": "^5.3.0",
+    "ignore": "^7.0.0",
+    "lru-cache": "^11.0.2",
+    "parse-gitignore": "^2.0.0",
+    "path-browserify": "^1.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/big-json": "^3.2.5",
+    "@types/chai": "^5.0.1",
+    "@types/jsdom": "^21.1.7",
+    "@types/jsonpath": "^0.2.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.5",
+    "@types/parse-gitignore": "^1.0.2",
+    "@types/path-browserify": "^1.0.3",
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1",
+    "tsx": "^4.19.2",
+    "vite": "^6.0.7"
+  },
+  "exports": {
+    "./collection": {
+      "import": "./dist/esm/collection.js",
+      "require": "./dist/cjs/collection.js"
+    },
+    "./container": {
+      "import": "./dist/esm/container.js",
+      "require": "./dist/cjs/container.js"
+    },
+    "./editor": {
+      "import": "./dist/esm/editor.js",
+      "require": "./dist/cjs/editor.js"
+    },
+    "./esbuild": {
+      "import": "./dist/esm/esbuild.js",
+      "require": "./dist/cjs/esbuild.js"
+    },
+    "./escapes": {
+      "import": "./dist/esm/escapes.js",
+      "require": "./dist/cjs/escapes.js"
+    },
+    "./promises": {
+      "import": "./dist/esm/promises.js",
+      "require": "./dist/cjs/promises.js"
+    },
+    "./helpers": {
+      "import": "./dist/esm/helpers.js",
+      "require": "./dist/cjs/helpers.js"
+    },
+    "./ipc": {
+      "import": "./dist/esm/ipc.js",
+      "require": "./dist/cjs/ipc.js"
+    },
+    "./osc": {
+      "import": "./dist/esm/osc.js",
+      "require": "./dist/cjs/osc.js"
+    },
+    "./snapshot": {
+      "import": "./dist/esm/snapshot.js",
+      "require": "./dist/cjs/snapshot.js"
+    },
+    "./spinner": {
+      "import": "./dist/esm/spinner.js",
+      "require": "./dist/cjs/spinner.js"
+    },
+    "./sync": {
+      "import": "./dist/esm/sync.js",
+      "require": "./dist/cjs/sync.js"
+    },
+    "./terminal": {
+      "import": "./dist/esm/terminal.js",
+      "require": "./dist/cjs/terminal.js"
+    },
+    "./types": {
+      "import": "./dist/esm/types.js",
+      "require": "./dist/cjs/types.js"
+    },
+    "./vite": {
+      "import": "./dist/esm/vite.js",
+      "require": "./dist/cjs/vite.js"
+    },
+    "./opfs": {
+      "import": "./dist/esm/opfs.js",
+      "require": "./dist/cjs/opfs.js"
+    },
+    "./filesystemtree": {
+      "import": "./dist/esm/filesystemtree.js",
+      "require": "./dist/cjs/filesystemtree.js"
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}

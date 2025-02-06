@@ -1,0 +1,47 @@
+{
+  "name": "@jsnix/cli",
+  "version": "0.0.56",
+  "description": "jsnix cli",
+  "scripts": {
+    "dev": "tsc",
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint --fix -c ../../eslint.config.js .",
+    "postbuild": "chmod +x dist/cli/index.js",
+    "start": "node dist/cli/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .turbo dist node_modules"
+  },
+  "author": "theodore brockman",
+  "license": "MIT",
+  "bin": {
+    "jsnix": "dist/cli/index.js"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./dist/cli/index.js",
+    "./*": "./dist/cli/*.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@jsnix/pastel": "^3.0.6",
+    "@jsnix/scripts": "^1.0.19",
+    "@jsnix/utils": "*",
+    "chalk": "^5.4.0",
+    "ink": "^5.1.0",
+    "ink-big-text": "^2.0.0",
+    "ink-link": "^4.1.0",
+    "ink-select-input": "^6.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^18.3.1",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}

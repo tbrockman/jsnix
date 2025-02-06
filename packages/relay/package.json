@@ -1,0 +1,31 @@
+{
+  "name": "@jsnix/relay",
+  "version": "0.0.36",
+  "description": "a relay for host -> webcontainer server communication",
+  "main": "dist/relay/index.js",
+  "bin": "dist/relay/main.js",
+  "scripts": {
+    "dev": "tsc",
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint --fix -c ../../eslint.config.js .",
+    "clean": "rm -rf .turbo dist node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "theodore brockman",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/relay/index.js",
+      "require": "./dist/relay/index.js",
+      "types": "./dist/relay/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@jsnix/utils": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5"
+  }
+}
