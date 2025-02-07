@@ -38,7 +38,7 @@ export default function App() {
 
 ## Creating a filesystem snapshot
 
-`@jsnix/utils` provides functionality to create a WebContainer snapshot from a specified path.
+`@jsnix/utils` provides functionality to create a WebContainer snapshot from a specified path ([default options](packages/utils/snapshot.ts#L72)).
 
 ### [`vite`](packages/utils/vite.ts) / [`esbuild`](packages/utils/esbuild.ts)
 
