@@ -93,7 +93,7 @@ export default function App() {
 
 ### Custom
 
-If you're not using `esbuild` or `vite`, you can still use the provided [`takeSnapshot`](packages/utils/snapshot.ts) function to integrate it into whatever build process you use (you'll just have to figure out your own way of referencing the snapshot in your code. `hint`: you can store the resulting snapshot using `JSON.stringify()`).
+If you're not using `esbuild` or `vite`, you can still use the provided [`takeSnapshot`](packages/utils/snapshot.ts#L93) function to integrate it into whatever build process you use (you'll just have to figure out your own way of referencing the snapshot in your code. `hint`: you can store the resulting snapshot using `JSON.stringify()`).
 
 ```ts
 // whatever.js
