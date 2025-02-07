@@ -2,7 +2,7 @@
 
 is a wrapper around [stackblitz/webcontainers](https://github.com/stackblitz/webcontainer-core), combined with some utility functions, whichs allows you to run Node.js in the browser with the typical editor ([`monaco-editor`](https://microsoft.github.io/monaco-editor/)) and terminal ([`xterm.js`](https://xtermjs.org/)) combo, but with a bit less setup and more of a focus on terminal interactivity.
 
-It has nothing to do with `nix` (sorry), it isn't POSIX-compliant, and really isn't all that Unix-like (I just liked the name).
+It has nothing to do with `nix` (nor `jslinux`), it isn't POSIX-compliant, and really isn't all that Unix-like (I just liked the name).
 
 You shouldn't use this for anything serious, and any usage is subject to the underlying [WebContainers license](https://webcontainers.io/enterprise).
 
