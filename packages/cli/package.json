@@ -26,7 +26,7 @@
     "dist"
   ],
   "dependencies": {
-    "@jsnix/pastel": "^3.0.6",
+    "@jsnix/pastel": "^3.0.8",
     "@jsnix/scripts": "^1.0.19",
     "@jsnix/utils": "*",
     "chalk": "^5.4.0",
