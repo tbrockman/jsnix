@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import Pastel from '@jsnix/pastel';
+const { default: Pastel } = await import('@jsnix/pastel');
 
 // TODO: fix ctrl-c
 const app = new Pastel({

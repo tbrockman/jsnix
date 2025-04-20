@@ -1,5 +1,14 @@
 # @jsnix/cli
 
+## 0.0.57
+
+### Patch Changes
+
+- Updating Pastel dep
+- Updated dependencies
+  - @jsnix/scripts@1.0.20
+  - @jsnix/utils@0.0.60
+
 ## 0.0.56
 
 ### Patch Changes

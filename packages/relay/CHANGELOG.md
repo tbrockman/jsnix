@@ -1,5 +1,13 @@
 # @jsnix/relay
 
+## 0.0.37
+
+### Patch Changes
+
+- Updating Pastel dep
+- Updated dependencies
+  - @jsnix/utils@0.0.60
+
 ## 0.0.36
 
 ### Patch Changes

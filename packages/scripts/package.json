@@ -1,6 +1,6 @@
 {
   "name": "@jsnix/scripts",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "type": "module",
   "description": "miscellaneous script code",
   "scripts": {

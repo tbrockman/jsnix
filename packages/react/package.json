@@ -1,6 +1,6 @@
 {
     "name": "@jsnix/react",
-    "version": "0.0.52",
+    "version": "0.0.53",
     "description": "jsnix react components and hooks",
     "main": "dist/index.js",
     "type": "module",

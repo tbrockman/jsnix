@@ -1,5 +1,13 @@
 # @jsnix/react
 
+## 0.0.53
+
+### Patch Changes
+
+- Updating Pastel dep
+- Updated dependencies
+  - @jsnix/utils@0.0.60
+
 ## 0.0.52
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@jsnix/relay",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "description": "a relay for host -> webcontainer server communication",
   "main": "dist/relay/index.js",
   "bin": "dist/relay/main.js",
