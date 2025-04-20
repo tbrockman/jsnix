@@ -1,5 +1,11 @@
 # @jsnix/cli
 
+## 0.0.58
+
+### Patch Changes
+
+- Attempting fix
+
 ## 0.0.57
 
 ### Patch Changes
